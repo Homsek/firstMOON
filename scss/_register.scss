@@ -1,0 +1,75 @@
+.main-registration {
+   flex: 1 0 auto;
+   background: url(../img/backgrounds/reservation.jpg) center no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.registration {
+
+   &__wrapper {
+      margin-top: 100px;
+      border-radius: 20px;
+      background-color: white;
+      padding: 30px;
+      max-width: 500px;
+      flex: 1 1 100%;
+      font-family: montserrat alternates;
+   }
+
+   &__title {
+      text-align: center;
+      font-size: calc(19px + 7 * (100vw / 1410));
+      text-transform: uppercase;
+      margin-bottom: 35px;
+   }
+
+   &__title span {
+      margin-right: 8px;
+      color: #EABC2F;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+   }
+
+   &__item {
+      font-family: montserrat;
+      border: 2px solid #EABC2F;
+      padding: 14px;
+      font-size: calc(15px + 3 * (100vw / 1410));
+   }
+
+   &__button {
+      font-size: calc(17px + 6 * (100vw / 1410));
+      padding: 17px;
+      border-radius: 100px;
+      background-color: #803ED3;
+      color: white;
+   }
+
+   &__text {
+      font-weight: 300;
+      text-align: center;
+      line-height: 150%;
+      margin-top: 25px;
+      font-size: calc(15px + 1 * (100vw / 1410));
+   }
+
+   &__text a {
+      font-weight: 500;
+      color: #803ED3;
+   }
+
+   &__text a:hover {
+      text-decoration: underline;
+   }
+}
+
+.authorization {
+   display: none;
+}

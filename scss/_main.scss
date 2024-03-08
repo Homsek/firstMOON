@@ -1,0 +1,147 @@
+// !screen
+
+.screen {
+   padding: 0 20px;
+   background: url(../img/backgrounds/background.jpg) no-repeat center;
+   background-size: cover;
+
+   &__wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__content {
+      text-align: center;
+      color: white;
+      font-family: Montserrat Alternates;
+   }
+}
+.content-screen {
+
+   &__title {
+      font-size: calc(25px + 20 * (100vw / 1410));
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 130%;
+   }
+ 
+   &__title span {
+      color: #EABC2F;
+   }
+
+   &__subtitle {
+      font-size: calc(19px + 7 * (100vw / 1410));
+      line-height: 150%;
+      font-weight: 400;
+      margin: 35px 0 90px 0;
+      max-width: 850px;
+   }
+
+   &__button {
+      padding: 18px 100px;
+      border-radius: 30px;
+      font-weight: 300;
+      background-color: #813ed3;
+      color: white;
+      font-size: calc(19px + 7 * (100vw / 1410));
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s ease 0.1s;
+   }
+
+   &__button:hover {
+      color: #813ed3;
+   }
+
+   &__button::after {
+      content: "";
+      background-color: #ffffff;
+      position: absolute;
+      left: 50%;
+      top: -100%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all 0.4s ease 0.1s;
+   }
+
+   &__button:hover::after {
+      top: 0;
+   }
+
+   &__button span {
+      position: relative;
+      z-index: 2;
+   }
+}
+
+
+// !about
+
+.about {
+   padding: 110px 20px;
+
+   &__wrapper {
+      max-width: 1410px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+   }
+
+   @media (max-width: 768px) {
+      &__wrapper {
+         gap: 40px;
+      }
+   }
+
+}
+.block-about {
+   display: flex;
+   gap: 30px;
+
+   &__column {
+      flex: 7;
+   }
+
+   &__title {
+      margin-bottom: 50px;
+      font-size: calc(19px + 6 * (100vw / 1410));
+   }
+
+   &__text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 150%;
+   }
+
+   picture {
+      flex: 5;
+      flex: 0 0 570px;
+      position: relative;
+      overflow: hidden;
+   }
+
+   &__img {
+      overflow: hidden;
+      border-radius: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   @media (max-width: 1024px) {
+      flex-direction: column;
+
+      picture {
+         flex: 0 0 300px;
+      }
+   }
+}
+

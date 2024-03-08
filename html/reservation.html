@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/fonts.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Бронирование</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__wrapper">
+            <img onclick="document.location='../index.html'" src="../img/icons/logo.png" alt="" class="header__logo">
+            <nav class="header__list list-header">
+               <a href="../index.html" class="list-header__item">Главная</a>
+               <a href="contacts.html" class="list-header__item">Контакты</a>
+               <a href="#" class="list-header__item">Номера</a>
+               <a href="#" class="list-header__item">Виртуальная экскурсия</a>
+            </nav>
+            <div class="header__buttons">
+               <a href="" class="header__phone _icon-phone"></a>
+               <button onclick="document.location='../html/registration.html'"
+                  class="header__button"><span>регистрация</span></button>
+            </div>
+         </div>
+      </header>
+      <!-- main -->
+      <main class="main-reservation">
+         <section class="reservation">
+            <div class="reservation__wrapper">
+               <h1 class="reservation__title">бронирование номера</h1>
+               <div class="reservation__block">
+                  <div class="reservation__column">
+                     <p class="reservation__text">заезд</p>
+                     <input class="reservation__date" type="text">
+                  </div>
+                  <div class="reservation__column">
+                     <p class="reservation__text">выезд</p>
+                     <input class="reservation__date" type="text">
+                  </div>
+                  <div class="reservation__column">
+                     <p class="reservation__text">взрослые</p>
+                     <input class="reservation__date" type="text">
+                  </div>
+                  <div class="reservation__column">
+                     <p class="reservation__text">дети</p>
+                     <input class="reservation__date" type="text">
+                  </div>
+                  <button class="reservation__button"><span>Найти номер</span></button>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+         <div class="footer__wrapper">
+            <div class="footer__content content-footer">
+               <p class="content-footer__copyright">© 2024 “First Moon”. Все права защищены</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+.main-reservation {
+   flex: 1 0 auto;
+   background: url(../img/backgrounds/reservation.jpg) center no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.reservation {
+   
+   &__wrapper {
+      padding: 30px;
+      max-width: 1410px;
+      flex: 1 1 100%;
+      font-family: montserrat alternates;
+   }
+
+   &__title {
+      color: white;
+      font-size: calc(30px + 17 * (100vw / 1410));
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 50px;
+   }
+
+   &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 32px 40px;
+      border-radius: 10px;
+   }
+
+   &__column {
+      text-align: center;
+   }
+
+   &__text {
+      font-size: calc(15px + 3 * (100vw / 1410));
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 130%;
+   }
+
+   &__date {
+      text-align: center;
+      padding: 5px;
+      border: 4px solid #803ED3;
+      font-size: calc(17px + 5 * (100vw / 1410));
+      width: 150px;
+      background: none;
+   }
+
+   &__button {
+      background-color: #803ED3;
+      font-size: calc(19px + 7 * (100vw / 1410));
+      border-radius: 30px;
+      color: white;
+      padding: 17px 45px;
+      position: relative;
+      overflow: hidden;
+   }
+
+   &__button::after {
+      content: '';
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: #9150e1;
+      border-radius: 30px;
+      transition: all 0.4s ease 0.1s;
+   }
+
+   &__button:hover::after {
+      left: 0;
+   }
+
+   &__button span {
+      position: relative;
+      z-index: 2;
+      transition: all 0.4s ease 0.1s;
+   }
+}

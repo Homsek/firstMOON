@@ -1,0 +1,122 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+/*--------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,regular,500,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:200,300,regular,500,600);
+
+body {
+   font-family: Montserrat;
+}
+
+@import '_header', '_main', '_footer', '_reservation', '_contacts', "_rooms", "_register";
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+._active-item {
+   color: #803ED3;
+}
+
+._right {
+   text-align: right;
+}
+
+
+._title {
+   font-family: Montserrat Alternates;
+   font-size: calc(22px + 10 * (100vw / 1410));
+   text-transform: uppercase;
+   font-weight: 400;
+}
+
+._title span {
+   color: #EABC2F;
+   margin-right: 15px;
+}

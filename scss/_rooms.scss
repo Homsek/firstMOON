@@ -1,0 +1,114 @@
+.rooms-page {
+   flex: 1 0 100%;
+   background: url(../img/backgrounds/reservation.jpg) center no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.rooms {
+   padding: 0 20px;
+   margin-top: 200px;
+   margin-bottom: 110px;
+   max-width: 1410px;
+   flex:  1 1 auto;
+
+		&__wrapper {
+         background-color: white;
+         padding: 30px;
+         border-radius: 20px;
+		}
+
+      &__list {
+         display: flex;
+         flex-direction: column;
+         gap: 25px;
+      }
+   
+      &__item:not(:last-child) {
+         border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+         padding-bottom: 25px;
+      }
+}
+
+.item-room {
+   display: flex;
+   gap: 30px;
+
+   picture {
+      flex: 1 1 auto;
+      max-width: 348px;
+      max-height: 200px;
+      overflow: hidden;
+   }
+
+   &__img {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__title {
+      font-family: montserrat alternates;
+      font-size: calc(19px + 7 * (100vw / 1410));
+      font-weight: 400;
+      line-height: 130%;
+   }
+
+   &__text {
+      font-size: calc(15px + 2 * (100vw / 1410));
+      line-height: 150%;
+      font-weight: 300;
+   }
+
+   &__price-container {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__price {
+      font-size: calc(15px + 2 * (100vw / 1410));
+      line-height: 150%;
+      font-weight: 400;
+   }
+
+   &__button {
+      align-items: center;
+      background-color: #803ED3;
+      border-radius: 100px;
+      color: white;
+      padding: 5px 18px;
+      font-size: calc(15px + 3 * (100vw / 1410));
+      line-height: 150%;
+      font-weight: 500;
+      text-align: left;
+      transition: all 0.3s;
+      position: relative;
+   }
+
+   @media (max-width: 768px) {
+      &__button:active {
+         padding: 5px 60px 5px 18px;
+      }
+   }
+
+   @media (min-width: 769px) {
+      &__button:hover {
+         padding: 5px 60px 5px 18px;
+      }
+   }
+
+   &__button::after {
+      content: '';
+      position: absolute;
+      padding: 14px 21px;
+      margin-left: 10px;
+      background: url(../img/icons/right-arrow.png) center no-repeat;
+   }
+}

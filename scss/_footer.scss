@@ -1,0 +1,23 @@
+.footer {
+
+   &__wrapper {
+      background-color: #1E1E1E;
+      padding: 20px;
+   }
+
+   &__content {
+      max-width: 1410px;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+   }
+}
+.content-footer {
+
+   &__copyright {
+      font-size: calc(17px + 2 * (100vw / 1410));
+      opacity: 0.7;
+      font-weight: 400;
+      line-height: 150%;
+   }
+}

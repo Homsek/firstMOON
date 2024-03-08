@@ -1,0 +1,78 @@
+.main-contacts {
+   flex: 1 0 auto;
+   background: url(../img/backgrounds/reservation.jpg) center no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.contacts {
+   max-width: 1410px;
+   flex: 1 0 auto;
+
+   &__wrapper {
+      padding: 30px;
+      font-family: montserrat alternates;
+   }
+
+   &__content {
+      display: flex;
+      gap: 30px;
+   }
+}
+.content-contacts {
+
+   &__block {
+      flex: 5;
+      background-color: white;
+      padding: 70px 30px;
+      border-radius: 20px;
+   }
+
+   &__map {
+      flex: 7;
+      border-radius: 20px;
+      overflow: hidden;
+      max-height: 400px;
+      width: 100%;
+      position: relative;
+   }
+}
+.block-contacts {
+
+   &__title {
+      font-family: montserrat alternates;
+      margin-bottom: 30px;
+      font-size: calc(19px + 7 * (100vw / 1410));
+      text-transform: uppercase;
+   }
+
+   &__title span {
+      margin-right: 15px;
+      color: #EABC2F;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+   }
+
+   &__phone,
+   &__mail,
+   &__address {
+      font-family: montserrat;
+      font-size: calc(15px + 3 * (100vw / 1410));
+      font-weight: 300;
+      color: black;
+      line-height: 130%;
+   }
+   
+   &__phone span,
+   &__mail span,
+   &__address span {
+      margin-right: 10px;
+   }
+}

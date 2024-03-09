@@ -1,4 +1,4 @@
-.main-registration {
+.main-form {
    flex: 1 0 auto;
    background: url(../img/backgrounds/reservation.jpg) center no-repeat;
    background-size: cover;
@@ -7,7 +7,7 @@
    align-items: center;
 }
 
-.registration {
+.form {
 
    &__wrapper {
       margin-top: 100px;
@@ -19,24 +19,32 @@
       font-family: montserrat alternates;
    }
 
-   &__title {
+   &__title-wrapper {
       text-align: center;
       font-size: calc(19px + 7 * (100vw / 1410));
       text-transform: uppercase;
       margin-bottom: 35px;
    }
 
-   &__title span {
+   &__title-wrapper ._icon-star {
       margin-right: 8px;
       color: #EABC2F;
    }
 
-   &__form {
-      display: flex;
+   &__registration {
+      display: none;
       flex-direction: column;
       gap: 25px;
    }
 
+   &__authorization {
+      display: none;
+      flex-direction: column;
+      gap: 25px;
+   }
+}
+
+.registration {
    &__item {
       font-family: montserrat;
       border: 2px solid #EABC2F;
@@ -52,6 +60,14 @@
       color: white;
    }
 
+   &__warning {
+      text-align: center;
+      font-size: calc(15px + 2 * (100vw / 1410));
+      line-height: 130%;
+      margin-top: 10px;
+      color: red;
+   }
+
    &__text {
       font-weight: 300;
       text-align: center;
@@ -60,16 +76,50 @@
       font-size: calc(15px + 1 * (100vw / 1410));
    }
 
-   &__text a {
+   &__text span {
+      cursor: pointer;
       font-weight: 500;
       color: #803ED3;
    }
 
-   &__text a:hover {
+   &__text span:hover {
       text-decoration: underline;
    }
 }
 
+.main-registration::after {
+   z-index: 1;
+   content: '';
+   position: absolute;
+   left: 0;
+   height: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #813ed393;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+}
+
+._sending::after {
+   opacity: 1;
+   visibility: visible;
+}
+
 .authorization {
-   display: none;
+
+   &__item {
+      font-family: montserrat;
+      border: 2px solid #EABC2F;
+      padding: 14px;
+      font-size: calc(15px + 3 * (100vw / 1410));
+   }
+
+   &__button {
+      font-size: calc(17px + 6 * (100vw / 1410));
+      padding: 17px;
+      border-radius: 100px;
+      background-color: #803ED3;
+      color: white;
+   }
 }

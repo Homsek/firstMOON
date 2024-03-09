@@ -120,3 +120,16 @@ body {
    color: #EABC2F;
    margin-right: 15px;
 }
+
+._error {
+   background-color: #fff0f0;
+}
+
+._error::placeholder {
+   color: rgb(178, 0, 0);
+}
+
+._active {
+   display: flex;
+}
+

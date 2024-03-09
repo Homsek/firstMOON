@@ -26,27 +26,28 @@
          </div>
       </header>
       <!-- main -->
-      <main class="main-registration">
-         <div class="registration__wrapper">
-            <h2 class="registration__title"><span class="_icon-star"></span>регистрация</h2>
-            <form action="#" method="post" class="registration__form">
-               <input type="text" placeholder="Имя" name="firstname" class="registration__item">
-               <input type="text" placeholder="Фамилия" name="lastname" class="registration__item">
-               <input type="text" placeholder="Почта" name="mail" class="registration__item">
-               <input type="number" placeholder="Телефон" name="phone" maxlength="11" class="registration__item">
-               <input type="text" placeholder="Пароль" name="pass" class="registration__item">
+      <main class="main-form form">
+         <div class="form__wrapper">
+            <h2 class="form__title-wrapper"><span class="_icon-star"></span><span class="form__title">регистрация</span>
+            </h2>
+            <form action="#" id="register" method="post" class="form__registration registration _active">
+               <input type="text" placeholder="Имя" name="firstname" class="registration__item _req">
+               <input type="text" placeholder="Фамилия" name="lastname" class="registration__item _req">
+               <input type="text" placeholder="Почта" name="mail" class="registration__item _req _mail">
+               <input type="number" placeholder="Телефон" name="phone" maxlength="11" class="registration__item _req">
+               <input type="text" placeholder="Пароль" name="pass" class="registration__item _req">
                <button class="registration__button" type="submit">Зарегистрироваться</button>
+            </form>
+            <form action="#" id="login" method="post" class="form__authorization authorization">
+               <input type="text" placeholder="Почта" name="mail" name="mail" class="authorization__item">
+               <input type="text" placeholder="Пароль" name="pass" class="authorization__item">
+               <button class="authorization__button" type="submit">Войти</button>
             </form>
             <p class="registration__warning">
             </p>
             <p class="registration__text">Уже зарегистрированы?<br>
-               тогда просто <a href="">войдите</a> в аккаунт</p>
+               тогда просто <span id="form-swiper">войдите</span> в аккаунт</p>
          </div>
-         <form action="../php/login.php" method="post" class="authorization">
-            <input type="text" placeholder="почта" name="mail" name="mail" class="authorization__item">
-            <input type="text" placeholder="пароль" name="pass" class="authorization__item">
-            <button class="authorization__button" type="submit">Войти</button>
-         </form>
       </main>
       <!-- footer -->
       <footer class="footer">
